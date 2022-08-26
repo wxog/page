@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("./fonts/HELR65W.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/HELR65W.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/HELR65W.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/HELR65W.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/HELR65W.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/HELR65W.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/HELR65W.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background: rgb(30, 30, 30);
+    font-family: 'Open Sans', sans-serif;
+	 -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+#bgVideo {
+	position:fixed;
+    min-width:135%;
+    min-height:110%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translateX(-50%) translateY(-50%);
+    background-size:cover;
+    overflow:hidden;
+	-webkit-filter:blur(30px);
+    -moz-filter:blur(30px);
+    -o-filter:blur(30px);
+    -ms-filter:blur(30px);
+    filter:blur(30px);
+    background:rgba(7,9,21,.5);
+    filter:brightness(62.5%);
+}
+
+#body,video{
+    top:50%;
+    left:50%
+}
+
+#container {
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	position: absolute;
+	text-align: center;
+	border-radius: 25px;
+	transform: translateX(-50%) translateY(-50%);
+	background: rgba(0, 0, 0, 0.8)
+}
+
+#events{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    z-index: 999;
+    display: block;
+    font-size: 11px;
+}
+
+#mid{               
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);    
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+a{
+    text-align: center;
+	font-size: 12px;
+	text-align: center;	
+	color: white;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-family: Helvetica-Bold;
+	-webkit-transition: 1s;
+}
+a:hover{
+	color: grey;
+	-webkit-transition: 1s;
+}
+
+p{
+	color: grey;
+	letter-spacing: 1px;
+	font-family: Helvetica-Bold;
+	font-size: 17px;
+}
+
+.log-title {
+    color: #95b806;
+}
+
+.log-body {
+    color: rgb(220,220,220);
+}
+
+.event {
+    position: relative;
+    opacity: 0;
+    top: -10px;
+}
+
+ashake,
+.shake.inline {
+	display:inline-block
+}
+
+.shake {
+	display:inline-block
+}
+.shake {
+	display:block;
+	position:relative;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 4s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
