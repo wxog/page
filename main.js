@@ -26,8 +26,8 @@ function sleep(ms) {
 
 window.onload = async () => {
 	await sleep(200);
-	 logger.log("wﾒ! デーモン", "welcome");
+	 logger.log("wﾒ! スタジオ", "welcome");
 	 await sleep(400);
-	 logger.log("wﾒ! デーモン", "made by qiyjeong");
+	 logger.log("wﾒ! スタジオ", "made by qiyjeong");
 	
 }
