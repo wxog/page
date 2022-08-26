@@ -22,19 +22,20 @@
 	
 	<!-- WEBSITE VIDEO AND AUDIO -->
     <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> <!-- Forces audio on-->
-	<video playsinline autoplay loop id="bgVideo">
-	    <source src="bg2.mp4" type="video/mp4">
-		<script>
-			var video = document.currentScript.parentElement;
-			video.volume = 0.666;
-		</script>
+	<video class="fadeIn" autoplay muted loop disablePictureInPicture disableRemotePlayback id="bgVideo" playsinline>
+		<source src="bg2.mp4" type="video/mp4" />
 	</video>
+
+	<style>
+		iframe {
+			opacity: 0.7;
+		}
+	</style>
 </head>
 <!-- REVOKE CONTEXT MENU, SELECT, DRAG AND KEY DOWN -->
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
 	<div id="mid">
 	<center>
-	<p>my discord server</p>
 		<iframe src="https://discord.com/widget?id=920537938499100682&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		</center>
 	</div>
